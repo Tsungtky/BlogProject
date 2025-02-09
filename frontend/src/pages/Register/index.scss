@@ -1,0 +1,26 @@
+$image-path:"../../assets/img";
+
+body{
+  background-image: url("#{$image-path}/pic02.jpg");
+}
+
+.registerMainDiv{
+  width: 30%;
+  height: 48vh;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  padding:30px 20px 0px 20px;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -25vh;
+  margin-left: -15%;
+}
+
+.registerMainDiv{
+  h1{
+    color: white;
+    margin-bottom: 16px;
+  }
+}

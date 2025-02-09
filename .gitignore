@@ -1,0 +1,9 @@
+# 忽略 macOS 系統文件
+.DS_Store
+
+# 忽略 node_modules 資料夾
+frontend/node_modules/
+backend/node_modules/
+
+# 忽略環境變數文件（如有）
+.env
