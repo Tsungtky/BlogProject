@@ -37,7 +37,7 @@ def create_table():
     if connection:
       connection.close()
 
-def insertIntoTable(user):
+def insert_user_into_table(user):
     connection = None
     cursor = None
     try:
@@ -80,7 +80,7 @@ def insertIntoTable(user):
             connection.close()
 
 # insert login time
-def insertLoginTime(email, loginTime):
+def insert_login_time(email, loginTime):
     connection = None
     cursor = None
     try:
@@ -123,7 +123,7 @@ def insertLoginTime(email, loginTime):
 
 
 # count login times
-def userLoginCount():
+def user_login_count():
     connection = None
     cursor = None
     results = None
@@ -158,7 +158,7 @@ def userLoginCount():
 
     return results # tuple as its type
 
-def selectUser(user):
+def select_user(user):
     connection = None
     cursor = None
     result = None
@@ -204,9 +204,9 @@ if __name__ == "__main__":
     create_table()
 
     user = User("", "test03@gmail.com", "1234567890a", "test03")
-    insertIntoTable(user)
+    insert_user_into_table(user)
 
-    result = selectUser(user)
+    result = select_user(user)
     if result:
       print(result)
       print("Login succeeded")
